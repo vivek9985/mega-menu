@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 7px rgb(204, 200, 200) ;
+}
+.main-menu{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 40px 0 40px;
+}
+nav ul li {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li a:hover {
+    color: orange;
+}
+.phone{
+    display: none;
+    padding: 0;
+    padding-top: 10px;
+    box-shadow: 1px 5px 5px rgb(230, 228, 228);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    position: absolute;
+    width: 170px;
+}
+.phone li {
+    font-size: 13px;
+    text-align: left;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    margin: 0;
+    color: rgb(32, 32, 32);
+}
+.phone li:hover{
+    color: rgb(255, 255, 255);
+    background-color: orange;
+}
+.phone li:hover a{
+    color:rgb(255, 255, 255);
+}
+.tab{
+    display: none;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 5px 5px rgb(230, 228, 228);
+    border-radius: 5px;
+    position:absolute;
+    left: 160px;
+    top: 80px;
+}
+.ipad:hover li a{
+    color: rgb(0, 0, 0);
+}
+.tab li:hover a{
+    color:rgb(255, 255, 255);
+}
+.arrow{
+    width: 10px;
+    height: 10px;
+    margin-left: 40px;
+    transition: all 1s ease;
+}
+.ipad:hover .arrow{
+    transform: rotate(90deg);
+}
+.laptop .lap{
+    display: none;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 5px 5px rgb(230, 228, 228);
+    border-radius: 5px;
+    position:absolute;
+    padding-top: 10px;
+}
+.lap li{
+    font-size: 13px;
+    text-align: left;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    margin: 0;
+    color: rgb(32, 32, 32);
+}
+.lap li:hover a {
+    color: rgb(255, 255, 255)
+}
+.lap li:hover{
+    background-color: orange;
+}
+.headphone{
+    display: none;
+    width: 190px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 5px 5px rgb(230, 228, 228);
+    border-radius: 5px;
+    position:absolute;
+    padding-top: 10px;
+}
+.headphone li{
+    font-size: 13px;
+    text-align: left;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    margin: 0;
+    color: rgb(32, 32, 32);
+}
+.headphone li:hover{
+    background-color: orange;
+}
+.headphone li:hover a{
+    color: white;
+}
+.speaker{
+    display: none;
+    position:absolute;
+    width: 190px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 5px 5px rgb(230, 228, 228);
+    border-radius: 5px;
+    position:absolute;
+    top: 140px;
+    left: 170px;
+}
+.spkr:hover .speaker{
+    display: block;
+}
+.spkr:hover .speaker li a{
+    color: rgb(0, 0, 0);
+}
+.headphone .arrow{
+    margin-left: 70px;
+}
+.speaker li:hover{
+    background-color: orange;
+}
+.speaker li:hover a{
+    color:rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+.product-section{
+    width: 100%;
+    height: 95vh;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.left{
+    background-color: rgb(17, 17, 17);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(255, 255, 255);
+}
+.main-content{
+    width: 70%;
+    padding: 10px;
+}    
+.product-title{
+    font-size: 40px;
+}
+.product-desc{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.877);
+}
+.order-btn{
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.right{
+    background-color: #f5f5f7;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.iphone14promax{
+    background-image: url(img/iphone-14-pro-purple.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 370px;
+}
+.product-variation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.price{
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.color-title{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.all-color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.color{
+    padding: 8px;
+    margin: 0 5px;
+    border: 2px solid rgb(150, 141, 141);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.purple{
+    background-color: rgb(187, 10, 187);
+}
+.white{
+    background-color: rgb(220, 231, 233);
+}
+.golden{
+    background-color: rgb(218, 146, 13);
+}
+
+
+.practice-part-1-section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.practice-part-1-section-container{
+    width: 90%;
+    display: flex;
+}
+.practice-both-row{
+    width: 50%;
+    padding: 20px;
+}
+.left-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-row-content{
+    position: relative;
+}
+.left-row-content button{
+    padding: 20px 22px;
+    background-color: rgb(14, 187, 8);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 120px;
+    margin-right: -27px;
+    cursor: pointer;
+}
+.left-row-content button i{
+    color: white;
+}
+.left-row-content{
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url(img/pexels-photo-681335.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.right-row h2{
+    font-size: 23px;
+}
+.right-row p{
+    font-size: 14px;
+    color:rgb(65, 63, 63);
+}
+.right-row ul li{
+    line-height: 27px;
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    list-style-type: none;
+}
+.right-row ul li i{
+    padding-right: 10px;
+    font-size: 12px;
+    color:rgb(14, 187, 8);
+}
+.faq-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.faq-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.faq-left{
+    width: 50%;
+    height: 400px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faq-img{
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    background-image: url(img/faq-question.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.faq-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faq-right-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.faq-right-content div{
+    margin: 5px 0;
+    padding: 5px;
+}
+.faq-right-content div h2{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 20px;
+    width: 450px;
+    color: white;
+    background-color: rgb(137, 103, 231);
+    position: relative;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.faq-right-content div h2 span{
+    position: absolute;
+    right: 20px;
+    transition: all .4s ease;
+}
+.faq-right-content div h2:hover {
+    color:rgb(0, 0, 0);
+}
+.faq-right-content div h2:hover span {
+    transform: rotate(90deg);
+}
+.faq-right-content div p{
+    width: 450px;
+    text-align: justify;
+    word-spacing: -1px;
+    border: 1px solid rgb(255, 255, 255);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: rgb(137, 103, 231);
+    display: none;
+}
+
+
+.magnet{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0;
+}
+.magnet a{
+    text-decoration: none;
+}
+.box{
+    position: relative;
+    width: 110px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: rgb(198, 206, 206);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: rgb(51, 49, 49);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+    clip-path: circle(70%);
+}
+.box:hover{
+    background-color: rgb(0, 0, 0);
+    font-size: 9px;	
+    color: rgb(255, 255, 255);
+    box-shadow: -1px 1px 5px rgb(133, 133, 133);
+    outline-color:rgb(0, 0, 0);
+    outline-style: dotted;
+    outline-width: 2px;
+    outline-offset: 3px;
+    clip-path: circle(100%);
+    width: 70px;
+    height: 70px;
+}
